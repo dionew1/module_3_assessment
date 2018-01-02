@@ -1,4 +1,4 @@
-requrire "rails_helper"
+require "rails_helper"
 
 feature "user can search for best_buy_location" do
   it "by providing a zip code" do
@@ -6,7 +6,7 @@ feature "user can search for best_buy_location" do
     # When I visit "/"
     visit "/"
     # And I fill in a search box with "80202" and click "search"
-    fill_in "search_form" with: 80202
+    fill_in "search", with: 80202
     click_on "Search"
     # Then my current path should be "/search" (ignoring params)
     expect(current_path).to eq ("/search")
