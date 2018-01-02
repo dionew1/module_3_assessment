@@ -5,7 +5,9 @@ class StorePresenter
   end
 
   def stores_by_zip
-    service.stores_within_25_miles
+    service.stores_within_25_miles[:stores].map do |raw_store|
+      Store.new(raw_store)
+    end
   end
 
   private
