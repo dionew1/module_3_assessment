@@ -12,6 +12,7 @@ class SearchService
       req.url "v1/stores(area(#{filter},25))"
       req.params["apiKey"] = ENV["best_buy_key"]
       req.params["format"] = "json"
+      req.params["pageSize"] = 50
     end
     JSON.parse(response.body, symbolize_names: true)
   end
