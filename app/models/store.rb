@@ -6,8 +6,8 @@ class Store
     @attrs          = attrs || {}
     @name           = attrs[:longName]
     @city           = attrs[:city]
-    @distance       = attrs[:phone]
-    @phone_number   = attrs[:distance]
+    @distance       = attrs[:distance]
+    @phone_number   = attrs[:phone]
     @store_type     = attrs[:storeType]
   end
 
