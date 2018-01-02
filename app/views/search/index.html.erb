@@ -1,7 +1,7 @@
-<h3><%= @stores.count %>Total Stores</h3>
+<h3><%= @stores.count %> Total Stores</h3>
 <div class="container">
   <% @stores.each do |store| %>
-    <p class="name">Name: <%= store.name %></p>
+  <strong><p class="name">Name: <%= store.name %></p></strong>
     <p class="city">City: <%= store.city %></p>
     <p class="distance">Distance: <%= store.distance %></p>
     <p class="phone-number">Phone: <%= store.phone_number %></p>
