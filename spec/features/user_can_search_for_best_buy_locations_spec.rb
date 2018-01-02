@@ -19,6 +19,6 @@ feature "user can search for best_buy_location" do
     expect(page).to have_selector ".city"
     expect(page).to have_selector ".distance"
     expect(page).to have_selector ".phone-number"
-    expect(page).to have_selector ".store_type"
+    expect(page).to have_selector ".store-type"
   end
 end

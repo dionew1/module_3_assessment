@@ -1,6 +1,6 @@
 
-<%= form_tag(search_path, method: "get", id: "search_form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search for Store"%>
+<%= form_tag(search_index_path, method: "get", id: "search_form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search for Stores"%>
   <%= submit_tag "Search" %>
 <% end %>
 <div class="container">
